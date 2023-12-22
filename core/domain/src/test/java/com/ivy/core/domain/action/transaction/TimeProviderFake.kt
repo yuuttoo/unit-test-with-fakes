@@ -7,15 +7,15 @@ import java.time.ZoneId
 
 class TimeProviderFake: TimeProvider {
     override fun timeNow(): LocalDateTime {
-        TODO("Not yet implemented")
+        return LocalDateTime.now()
     }
 
     override fun dateNow(): LocalDate {
-        TODO("Not yet implemented")
+        return LocalDate.now()
     }
 
     override fun zoneId(): ZoneId {
-        TODO("Not yet implemented")
+        return ZoneId.of("UTC")
     }
 
 }
