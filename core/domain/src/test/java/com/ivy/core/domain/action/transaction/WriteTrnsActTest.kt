@@ -41,9 +41,9 @@ internal class WriteTrnsActTest {
         timeProviderFake = TimeProviderFake()
         accountCacheDaoFake = AccountCacheDaoFake()
         writeTrnsAct = WriteTrnsAct(
-            transactionDao = TransactionDaoFake(),
+            transactionDao = transactionDaoFake,
             trnsSignal = TrnsSignal(),
-            timeProvider = TimeProviderFake(),
+            timeProvider = timeProviderFake,
             invalidateAccCacheAct = InvalidateAccCacheAct(
                 accountCacheDao = accountCacheDaoFake,
                 timeProvider = timeProviderFake
